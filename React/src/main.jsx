@@ -1,12 +1,7 @@
-import React from 'react';
+//import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const element = React.createElement("a", 
-{ href: "https://zrozumiecreact.pl" },
-"Test"
-);
-
-const elementInJSX = <a href="https://zrozumiecreact.pl">Test 2</a>;
+/*const elementInJSX = <a href="https://zrozumiecreact.pl">Test 2</a>;
 const currentDate = new Date();
 const hours = currentDate.getHours();
 const minutes = currentDate.getMinutes();
@@ -17,6 +12,18 @@ const timer = (
   </div>
 );
 
+ReactDOM.createRoot(document.getElementById('root')).render(timer);*/
 
+const numberContent = "99";
+function getRandomNumber(){
+  return Math.round(Math.random()*100);
+}
+const randomNumber = getRandomNumber();
 
-ReactDOM.createRoot(document.getElementById('root')).render(timer);
+const element = (
+  <div>
+    {`Number: ${numberContent}`}, {`Number: ${randomNumber}`}
+  </div>
+);
+
+ReactDOM.createRoot(document.getElementById('root')).render(element);
