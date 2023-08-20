@@ -1,7 +1,7 @@
 //import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-/*const elementInJSX = <a href="https://zrozumiecreact.pl">Test 2</a>;
+/*const elementInJSX = <a href="">Test 2</a>;
 const currentDate = new Date();
 const hours = currentDate.getHours();
 const minutes = currentDate.getMinutes();
@@ -20,9 +20,28 @@ function getRandomNumber(){
 }
 const randomNumber = getRandomNumber();
 
+const paragraphElement = (
+  <>
+    <h2>Heading</h2>
+      <a href="" className="link">
+        Strona
+      </a>
+      <p>
+        Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. 
+        Dolore, dicta itaque ab velit 
+        accusantium non!
+      </p>
+  </>
+)
 const element = (
   <div>
-    {`Number: ${numberContent}`}, {`Number: ${randomNumber}`}
+    {`Number: ${numberContent}`}, {`Number: ${randomNumber}`},
+    {paragraphElement},
+    {paragraphElement},
+    {paragraphElement},
+    {paragraphElement},
+    {paragraphElement},
   </div>
 );
 
