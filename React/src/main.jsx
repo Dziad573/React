@@ -5,13 +5,13 @@ const element = (
   <>
     <h1>Nasza strona!</h1>
     <main>
-      <LinkComponent/>
+      <LinkComponent text="Sprawdź naszą stronę" shouldOpenNewTab={true}/>
       <p>
         Lorem ipsum dolor sit amet consectetur 
         adipisicing elit. Quo at alias 
         impedit nemo, ea aperiam.
       </p>
-      <LinkComponent/>
+      <LinkComponent text="https://zrozumiecreact.pl" shouldOpenNewTab={false}/>
     </main>
   </>
 );
