@@ -24,6 +24,7 @@ function App() {
       <PersonInfo person={janina}></PersonInfo>
       <br />
       <PersonInfo person={karol}></PersonInfo>
+      <img src="/images/ikoadw1.png" alt="" />
     </>
   );
 }
