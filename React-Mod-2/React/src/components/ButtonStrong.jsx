@@ -1,6 +1,6 @@
-export function ButtonStrong({ children, klik }) {
+export function ButtonStrong({ children, onClick }) {
     return (
-        <button onClick={klik}>
+        <button onClick={onClick}>
             <strong>{children}</strong>
         </button>
     );
