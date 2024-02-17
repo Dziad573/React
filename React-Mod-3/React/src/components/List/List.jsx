@@ -1,32 +1,19 @@
 import { Item } from "../Item/Item";
-import styled from "styled-components";
-import {StyledButton} from "../styles/StyledButton";
 
 const emojis = ["🚀", "🎶", "🎁", "🎉", "✨"];
-
-const StyledList = styled.ul`
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 30px;
-    padding: 30px;
-`;
 
 export function List() {
     return (
         <>  
-            <StyledButton 
-                $primary = {true}
-                $margin = {30}
-            >
+            <button className={`bg-transparent border border-solid border-rose-800 p-3 rounded cursor-pointer w-[120px] text-primary transition m-8 hover:text-white hover:bg-teal-400`}>
                 test
-            </StyledButton>
+            </button>
 
-            <StyledList>
+            <ul className="flex flex-col gap-[32px] p-7">
                 {emojis.map((emoji) => (
                     <Item key={emoji} emoji={emoji} />
                     ))}
-            </StyledList>
+            </ul>
         </>
     );
 }
