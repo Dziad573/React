@@ -13,11 +13,11 @@ export function Tasks({ tasks, setTasks }) {
     // };
 
 
-    const tasksElement = tasks.map((task) => (
+    const tasksElement = tasks.map(({id, text}) => (
         <Task 
-            key={task.id} 
-            id={task.id} 
-            text={task.text} 
+            key={id} 
+            id={id} 
+            text={text}
             // onDelete={handleDeleteTask}
         />
     ));

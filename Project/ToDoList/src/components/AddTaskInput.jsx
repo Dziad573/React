@@ -19,17 +19,17 @@ export function AddTaskInput({ inputShown, setTasks }){
             return;
         }
         setTasks((prevTasks) => [...prevTasks, newTask]);
-        setTaskInputValue("");
+        //setTaskInputValue("");
         setIdValue((prevId) => prevId + 1);
     }
     
     return(
         <>
-            <input type="text" className={`m-1 p-2 w-[300px] text-wrap border-[3px] border-black bg-slate-500 text-lime-300 rounded-2xl ${inputShown ? "w-[80%]" : ""}`}
+            <input type="text" className={`left-0 absolute m-1 p-2 w-[340px] text-wrap border-[3px] border-black bg-slate-500 text-lime-300 rounded-2xl ${inputShown ? "w-[80%]" : ""}`}
                 onChange={handleTaskInputChange}
             />
 
-            <button className="px-[12px]"  onClick={() => handleAddTaskButtonClick(taskInputValue)}> 
+            <button className="px-[12px] top-3 right-0 absolute border border-lime-300"  onClick={() => handleAddTaskButtonClick(taskInputValue)}> 
                 Dodaj 
             </button>
 
