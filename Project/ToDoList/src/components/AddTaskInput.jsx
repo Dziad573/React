@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function AddTaskInput({ inputShown, setTasks }){
+export function AddTaskInput({ inputShown, setTasks}){
     
     const [taskInputValue, setTaskInputValue] = useState('');
     const [idValue, setIdValue] = useState(1);

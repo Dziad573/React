@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Task } from "./Task";
 
-export function Tasks({ tasks, setTasks }) {
+export function Tasks({ tasks, setTasks, setIdValue}) {
     // const handleDeleteTask = (id) => {
     //     setTasks((prevTasks) => {
     //         const updatedTasks = prevTasks.filter((task) => task.id !== id);
@@ -12,29 +12,37 @@ export function Tasks({ tasks, setTasks }) {
     //     });
     // };
 
-
     const tasksElement = tasks.map(({id, text}) => (
         <Task 
-            key={id} 
-            id={id} 
-            text={text}
-            // onDelete={handleDeleteTask}
+        key={id} 
+        id={id} 
+        text={text}
+        onDelete={() => {
+            alert("aa");
+            setIdValue((prevTasks) => 
+            prevTasks.filter((task) => task.id !== id));
+            setTasks((prevTasks) => 
+            prevTasks.filter((task) => task.id !== id));
+        }}
         />
-    ));
-
+        ));
+        
+    const tasksCouter = `${tasksElement.length}`;
+        
     return(
         <>
-            {tasks.length > 0 ? (
+            {tasksCouter > 0 ? (
                 <ul className="flex flex-col gap-[32px] p-3 m-2">{tasksElement}</ul>
             ) : (
                 <p className="p-3 m-2">Brak zadań do wyświetlenia</p>
             )}
     
-            {tasks.length >= 7 ? (
+            {tasksCouter >= 7 ? (
                 "Osiągnięto maksymalną liczbę zadań"
             ) : (
                 ""
             )}
+            {tasksCouter}
         </>
     )
 }
