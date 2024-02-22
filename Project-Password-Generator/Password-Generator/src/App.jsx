@@ -3,14 +3,13 @@ import './App.css';
 
 function App() {
   const [isPasswordElementShown, setIsPasswordElementShown] = useState(false);
-  const [data, setData] = useState('');
+  const [password, setPassword] = useState('');
   const [length, setLength] = useState(12);
   const [isSpecChecked, setIsSpecChecked] = useState(false);
   const [isPolishChecked, setIsPolishChecked] = useState(false);
   const [isNumChecked, setIsNumChecked] = useState(false);
   const [isBigChecked, setIsBigChecked] = useState(false);
   const [isPasswordShown, setIsPasswordShown] = useState(false);
-  const [password, setPassword] = useState('')
   
   const handleCheckboxSpecChange = (e) => {
     setIsSpecChecked(e.target.checked);
@@ -24,12 +23,12 @@ function App() {
   const handleCheckboxBigChange = (e) => {
     setIsBigChecked(e.target.checked);
   }
-  
+
   const handleChangeLength = (e) => {
     setLength(e.target.value);
   }
 
-  function random(length){
+  const random = () => {
     let characters = 'abcdefghijklmnopqrstuvwxyz';
     if(isSpecChecked){
       characters += '!@#$%^&*()[]{};:,<.>/?';
@@ -44,24 +43,16 @@ function App() {
       characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     }
     let result = '';
-    for (let i = 0; i<length; i++){
+    for (let i = 0; i < length; i++){
       const randomIndex = Math.floor(Math.random() * characters.length);
       result += characters[randomIndex];
     }
-    if(isPasswordShown){
       return result;
-    }else{
-      const char = '*';
-      result = char.repeat(length);
-      return result;
-    }
-
   }
   function handleIsPasswordElementShown() {
-    const randomNumber = Math.round(Math.random()*100);
-    setData(randomNumber.toString());
     setIsPasswordElementShown(true);
-    setPassword(random(length));
+    const generatedPassword = random();
+    setPassword(generatedPassword);
   }
 
   function handleShowPassword(){
@@ -71,8 +62,11 @@ function App() {
   function handleCopyPassword(){
     navigator.clipboard.writeText(password)
       .then(() => {
-        alert('Tekst został skopiowany!');
+        console.log('Tekst został skopiowany!');
       })
+      .catch((error) => {
+        console.error('Błąd podczas kopiowania tekstu:', error);
+      });
   }
 
   return (
@@ -107,11 +101,17 @@ function App() {
         {isPasswordElementShown ? (
           <>
             <br /> Twoje hasło: <br />
-            <div data={data}>{random(length)}</div>
+            {
+              isPasswordShown ? (
+                <div data={password}>{password}</div>
+              ) : (
+                <div data={'*'.repeat(length)}>{'*'.repeat(length)}</div>
+              )
+            }
             <button type='button' onClick={handleShowPassword}>
               {isPasswordShown ? "Ukryj" : "Pokaż"}
             </button>
-            <button type='button' onClick={handleCopyPassword}>Kopiuj</button>
+            <button type='button' onClick={() => {handleCopyPassword()}}>Kopiuj</button>
           </>
         ) : null}
       </form>
