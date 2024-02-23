@@ -1,28 +1,16 @@
 {
   "words": [
     {
-      "word": "",
-      "translation": "",
+      "word": "bagno",
+      "translation": "bulbulbul",
       "category": "noun",
-      "id": 18
+      "id": 1
     },
     {
-      "word": "",
-      "translation": "",
-      "category": "noun",
-      "id": 19
-    },
-    {
-      "word": "",
-      "translation": "",
-      "category": "noun",
-      "id": 21
-    },
-    {
-      "word": "",
-      "translation": "",
-      "category": "noun",
-      "id": 22
+      "word": "waadw",
+      "translation": "adwadw",
+      "category": "verb",
+      "id": 3
     }
   ]
 }
