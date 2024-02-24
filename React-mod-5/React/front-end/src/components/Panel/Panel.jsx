@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { List } from "../List/List";
 import { Form } from "../Form/Form";
 import { ErrorMessage } from "../ErrorMessage/ErrorMessage";
 import { FilterButton } from "../FilterButton/FilterButton";
+import { Info } from "../Info/Info";
 import styles from "./Panel.module.css";
+import { getCategoryInfo} from "../../utils/getCategoryInfo";
 
 export function Panel() {
     const [data, setData] = useState([]);
@@ -11,11 +13,12 @@ export function Panel() {
     const [error, setError] = useState(null);
     const [selectedCategory, setSelectedCategory] = useState(null);
     const url = "http://localhost:3000/words";
-
+    
+    
     useEffect(() => {
         let isCanceled = false;
         const params = selectedCategory ? `?category=${selectedCategory}` : "";
-            fetch(`${url}${params}`)
+        fetch(`${url}${params}`)
                 .then((res) => res.json())
                 .then((res) => {
                     if(!isCanceled){
@@ -24,10 +27,13 @@ export function Panel() {
                     }
                 });
 
-        return () => {
-            isCanceled = true;
-        }
-    }, [selectedCategory]);
+                return () => {
+                    isCanceled = true;
+                }
+            }, [selectedCategory]);
+            
+        const categoryInfo = useMemo(() => 
+            getCategoryInfo(selectedCategory), [selectedCategory]);
 
     // useEffect(() => {
     //     const timeout = setTimeout(
@@ -39,6 +45,7 @@ export function Panel() {
     //         clearTimeout(timeout);
     //     }
     // }, []);
+
 
     function handleFormSubmit(formData){
         fetch(url, {
@@ -85,6 +92,7 @@ export function Panel() {
         <>
             {error && <ErrorMessage>{error}</ErrorMessage>}
             <section className={styles.section}>
+                <Info>{categoryInfo}</Info>
                 <Form onFormSubmit = {handleFormSubmit}/>
                 <div className={styles.filters}>
                     <FilterButton active={selectedCategory === null} onClick={() => handleFilterClick(null)}>Wszystkie</FilterButton>
