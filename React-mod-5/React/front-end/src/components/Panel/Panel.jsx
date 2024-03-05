@@ -10,7 +10,7 @@ export function Panel({ onError }) {
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [selectedCategory, setSelectedCategory] = useState(null);
-    const url = "http://localhost:3000/woras";
+    const url = "http://localhost:3000/words";
     
     
     useEffect(() => {
