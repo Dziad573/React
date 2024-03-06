@@ -1,0 +1,21 @@
+.img {
+    display: block;
+    max-width: 300px;
+    border-radius: 32px;
+    border: solid 3px var(--color-text);
+    margin: 1rem 0;
+}
+
+.list {
+    margin-top: 0.5rem;
+}
+
+.time {
+    display: block;
+    margin: 1rem 0;
+}
+
+.description {
+    margin: 1rem 0;
+    font-style: italic;
+}

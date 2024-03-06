@@ -1,0 +1,12 @@
+.wrapper {
+    border-bottom: solid 1px var(--color-text);
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.title {
+    width: 100%;
+    font-weight: 600;
+}

@@ -1,0 +1,77 @@
+export const recipes = [
+    {
+        id: 1,
+        name: "Patatas Bravas",
+        time: 40,
+        ingredients: [
+            "500g ziemniaków",
+            "oliwa z oliwek",
+            "sól",
+            "1 ząbek czosnku",
+            "1 łyżeczka papryki ostrej",
+            "200ml passaty pomidorowej",
+            "1 łyżka octu winnego",
+            "1 łyżeczka cukru",
+        ],
+        description:
+            "Smaż ziemniaki w oliwie, dopraw solą. Przygotuj sos z czosnku, papryki, passaty, octu i cukru. Zaserwuj jako przekąskę.",
+        country: "Hiszpania",
+        img: "https://zrozumiecreact.pl/recipes/patatas-min.jpg",
+    },
+    {
+        id: 2,
+        name: "Carbonara",
+        time: 25,
+        ingredients: [
+            "200g spaghetti",
+            "100g boczku",
+            "2 jajka",
+            "50g parmezanu",
+            "sól",
+            "pieprz",
+            "czosnek",
+        ],
+        description:
+            "Ugotuj makaron al dente. Podsmaż boczek z czosnkiem. Dodaj ugotowany makaron i wymieszaj z jajkami i parmezanem.",
+        country: "Włochy",
+        img: "https://zrozumiecreact.pl/recipes/carbonara-min.jpg",
+    },
+    {
+        id: 3,
+        name: "Ratatouille",
+        time: 90,
+        ingredients: [
+            "1 bakłażan",
+            "1 cukinia",
+            "1 czerwona papryka",
+            "2 pomidory",
+            "1 cebula",
+            "2 ząbki czosnku",
+            "oliwa z oliwek",
+            "bazylia",
+            "tymianek",
+            "sól",
+            "pieprz",
+        ],
+        description:
+            "Pokrój warzywa (bakłażan, cukinia, papryka, pomidory, cebula) i piecz z oliwą oraz ziołami przez 1 godzinę.",
+        country: "Francja",
+        img: "https://zrozumiecreact.pl/recipes/ratatouille-min.jpg",
+    },
+    {
+        id: 4,
+        name: "Sushi Nigiri",
+        time: 60,
+        ingredients: [
+            "200g ryżu do sushi",
+            "3 łyżki octu ryżowego",
+            "1 łyżeczka cukru",
+            "kawałek świeżego łososia",
+            "wasabi",
+        ],
+        description:
+            "Ugotuj ryż, wymieszaj z octem i cukrem. Formuj kulki ryżu, dodaj kawałek łososia na wierzch. Podawaj z wasabi.",
+        country: "Japonia",
+        img: "https://zrozumiecreact.pl/recipes/sushi-min.jpg",
+    },
+];
