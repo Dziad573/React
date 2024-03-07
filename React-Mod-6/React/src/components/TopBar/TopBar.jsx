@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { Button } from "../Button/Button";
 import styles from "./TopBar.module.css";
+import { useContext } from "react";
+import { isLoggedInStateContext } from "../../context/isLoggedInStateContext";
 
 export function TopBar() {
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+    const [isLoggedIn, setIsLoggedIn] = useContext(isLoggedInStateContext);
 
     return (
         <div className={styles.wrapper}>
