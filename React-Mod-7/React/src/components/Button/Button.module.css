@@ -1,0 +1,14 @@
+.button {
+    color: var(--color-main);
+    background-color: transparent;
+    border: solid 1px currentColor;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    color: white;
+    background-color: var(--color-main);
+}

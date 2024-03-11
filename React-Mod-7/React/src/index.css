@@ -1,0 +1,17 @@
+:root {
+    --color-main: #3498db;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: var(--color-main);
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}

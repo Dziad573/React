@@ -1,0 +1,18 @@
+.item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid black;
+    margin-top: 16px;
+    padding-top: 16px;
+    min-width: 400px;
+}
+
+.name {
+    width: 100%;
+}
+
+.done {
+    text-decoration: line-through;
+}
