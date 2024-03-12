@@ -1,0 +1,57 @@
+.section {
+    background-color: #2e3138;
+    border-radius: 8px;
+    margin: 12px;
+}
+
+.list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: inline-flex;
+    padding: 24px;
+    flex-direction: column;
+    border-radius: 12px;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    background-color: #ccc9e7;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #856a5d;
+    width: 2rem;
+    height: 2rem;
+}
+
+.shortName {
+    display: block;
+}
+
+.fullName {
+    display: block;
+}
+
+.price {
+    display: block;
+}
+
+.error {
+    display: block;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #ccc9e7;
+}

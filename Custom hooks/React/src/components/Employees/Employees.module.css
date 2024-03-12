@@ -1,0 +1,20 @@
+.section {
+    border-radius: 12px;
+    padding: 24px;
+    margin: 12px;
+    background-color: #ccc9e7;
+}
+
+.tableContainer {
+    font-family: Helvetica, sans-serif;
+    border-radius: 12px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableContainer th,
+.tableContainer td {
+    color: #2e3138;
+    padding: 8px;
+    text-align: left;
+}

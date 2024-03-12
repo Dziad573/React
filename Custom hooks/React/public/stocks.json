@@ -1,0 +1,32 @@
+[
+    {
+        "company_name": "TechVista",
+        "stock_short_name": "TVS",
+        "market_price": 120.5
+    },
+    {
+        "company_name": "GreenTech",
+        "stock_short_name": "GRN",
+        "market_price": 45.75
+    },
+    {
+        "company_name": "InnoCorp",
+        "stock_short_name": "INC",
+        "market_price": 85.2
+    },
+    {
+        "company_name": "ElectroWave",
+        "stock_short_name": "EWV",
+        "market_price": 65.9
+    },
+    {
+        "company_name": "BioGen",
+        "stock_short_name": "BGN",
+        "market_price": 112.3
+    },
+    {
+        "company_name": "AeroTech",
+        "stock_short_name": "ATC",
+        "market_price": 98.15
+    }
+]

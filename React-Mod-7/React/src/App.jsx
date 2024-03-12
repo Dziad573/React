@@ -11,17 +11,6 @@ function App() {
         { name: "Wyrzucić śmieci", done: true, id: 2 },
     ], isFormShown: false});
 
-    function addItem(newTodoName) {
-        dispatch({type: "add", newTodoName})
-    }
-
-    function deleteItem(id) {
-        dispatch({type: "delete", id});
-    }
-
-    function finishItem(id) {
-        dispatch({type: "finish", id});
-    }
 
     return (
         <div className={styles.container}>
@@ -40,7 +29,10 @@ function App() {
                 )}
             </header>
             {isFormShown && (
-                <Form onFormSubmit={(newTodoName) => addItem(newTodoName)} />
+                <Form onFormSubmit={(newTodoName) => 
+                    dispatch({type: "add", newTodoName})
+                } 
+            />
             )}
             <ul>
                 {todos.map(({ id, name, done }) => (
@@ -48,8 +40,12 @@ function App() {
                         key={id}
                         name={name}
                         done={done}
-                        onDeleteButtonClick={() => deleteItem(id)}
-                        onDoneButtonClick={() => finishItem(id)}
+                        onDeleteButtonClick={() => 
+                            dispatch({type: "delete", id})
+                        }
+                        onDoneButtonClick={() => 
+                            dispatch({type: "finish", id})
+                        }
                     />
                 ))}
             </ul>

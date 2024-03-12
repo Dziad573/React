@@ -1,0 +1,50 @@
+[
+    {
+        "name": "January",
+        "score": 85
+    },
+    {
+        "name": "February",
+        "score": 42
+    },
+    {
+        "name": "March",
+        "score": 73
+    },
+    {
+        "name": "April",
+        "score": 61
+    },
+    {
+        "name": "May",
+        "score": 94
+    },
+    {
+        "name": "June",
+        "score": 29
+    },
+    {
+        "name": "July",
+        "score": 78
+    },
+    {
+        "name": "August",
+        "score": 52
+    },
+    {
+        "name": "September",
+        "score": 67
+    },
+    {
+        "name": "October",
+        "score": 89
+    },
+    {
+        "name": "November",
+        "score": 45
+    },
+    {
+        "name": "December",
+        "score": 71
+    }
+]

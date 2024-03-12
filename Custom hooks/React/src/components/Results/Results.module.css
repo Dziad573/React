@@ -1,0 +1,25 @@
+.section {
+    background-color: #ccc9e7;
+    border-radius: 8px;
+    margin: 12px;
+    padding: 24px;
+}
+
+.list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item {
+    margin: 0.25rem 0;
+}
+
+.progressContainer {
+    margin-top: 0.5rem;
+}
+
+.progress {
+    height: 1rem;
+    background-color: #856a5d;
+}

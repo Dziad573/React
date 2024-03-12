@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1234,
+        "name": "John",
+        "last_name": "Doe",
+        "salary": 50000
+    },
+    {
+        "id": 5678,
+        "name": "Jane",
+        "last_name": "Smith",
+        "salary": 60000
+    },
+    {
+        "id": 9876,
+        "name": "Michael",
+        "last_name": "Johnson",
+        "salary": 75000
+    },
+    {
+        "id": 3456,
+        "name": "Emily",
+        "last_name": "Williams",
+        "salary": 55000
+    },
+    {
+        "id": 7890,
+        "name": "David",
+        "last_name": "Brown",
+        "salary": 65000
+    },
+    {
+        "id": 2345,
+        "name": "Olivia",
+        "last_name": "Jones",
+        "salary": 52000
+    },
+    {
+        "id": 6789,
+        "name": "Daniel",
+        "last_name": "Miller",
+        "salary": 70000
+    },
+    {
+        "id": 4567,
+        "name": "Sophia",
+        "last_name": "Davis",
+        "salary": 58000
+    },
+    {
+        "id": 8901,
+        "name": "James",
+        "last_name": "Wilson",
+        "salary": 56000
+    },
+    {
+        "id": 1235,
+        "name": "Ava",
+        "last_name": "Moore",
+        "salary": 62000
+    }
+]
