@@ -1,0 +1,16 @@
+h1 {
+    padding: 32px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(75, 75, 75);
+    font-size: 32px;
+    padding: 30px;
+    text-align: center;
+}

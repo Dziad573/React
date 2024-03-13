@@ -1,0 +1,16 @@
+.modal {
+    position: fixed;
+    left: 5vw;
+    right: 5vw;
+    top: 5vh;
+    bottom: 5vh;
+    background-color: #eee;
+    color: #1b1b1b;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    border-radius: 30px;
+}
