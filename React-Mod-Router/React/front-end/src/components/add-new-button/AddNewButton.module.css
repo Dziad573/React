@@ -1,0 +1,17 @@
+.add-new-button {
+    border: 1px solid grey;
+    color: grey;
+    cursor: pointer;
+    margin-left: 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    font-size: 20px;
+    transform: scale(0.7);
+}
+
+.add-new-button:hover {
+    color: black;
+    border-color: black;
+}

@@ -1,0 +1,12 @@
+.notes-container {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+}
+
+.notes-list {
+    width: 15%;
+    border-right: 1px solid #d5d0d0;
+    width: 20%;
+    height: 100%;
+}

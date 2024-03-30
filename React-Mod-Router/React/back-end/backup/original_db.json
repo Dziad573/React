@@ -1,0 +1,45 @@
+{
+    "folders": [
+        {
+            "name": "Listy",
+            "id": 1
+        },
+        {
+            "name": "Przemyślenia",
+            "id": 2
+        }
+    ],
+    "archive": [],
+    "notes": [
+        {
+            "id": 5,
+            "folderId": 2,
+            "title": "Albert Einstein",
+            "body": "Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning."
+        },
+        {
+            "id": 7,
+            "title": "Sun Tzu",
+            "folderId": 2,
+            "body": "Osiągnąć sto zwycięstw w stu bitwach nie jest szczytem umiejętności. Szczytem umiejętności jest pokonanie przeciwnika bez walki."
+        },
+        {
+            "title": "Lista zakupów na wakacje",
+            "body": "\nKup ubezpieczenie,\nKup bilety,\nZarezerwuj hotel\n",
+            "folderId": 1,
+            "id": 8
+        },
+        {
+            "title": "Lista zakupów",
+            "body": "\n1. Herbata,\n2. Ziemianki,\n 3. Woda gazowana\n",
+            "folderId": 1,
+            "id": 10
+        },
+        {
+            "title": "Kurs React - TODO",
+            "body": "\n1. Napisać odcinki\n2. Nargrać odcinki",
+            "folderId": 1,
+            "id": 15
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+.folders-list {
+    flex: 1;
+}
+
+.new-folder-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.folders-column {
+    background-color: rgb(221, 220, 220);
+    border-right: 1px solid #d5d0d0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

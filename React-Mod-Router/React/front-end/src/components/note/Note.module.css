@@ -1,0 +1,41 @@
+.image {
+    width: 12px;
+    height: 12px;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.note-editor {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.note-editor input {
+    font-size: 25px;
+    border: none;
+    font-weight: 600;
+    background-color: transparent;
+    display: block;
+}
+
+.note-editor textarea {
+    display: block;
+    border: 0;
+    flex: 1;
+
+    background-color: transparent;
+    font-family: inherit;
+}
