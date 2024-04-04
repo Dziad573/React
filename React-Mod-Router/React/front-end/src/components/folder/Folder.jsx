@@ -5,7 +5,7 @@ import ArchiveIcon from "../../assets/remove.svg";
 const Folder = ({ children, active, icon }) => {
     return (
         <div
-            className={[styles.folder, active ? styles.active : ""].join(" ")}
+            className={`${styles.folder} ${active ? styles.active : ""}`}
             role="listitem"
         >
             <img src={icon === "archive" ? ArchiveIcon : FolderIcon} />
