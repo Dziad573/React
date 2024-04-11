@@ -1,10 +1,9 @@
 import styles from "./FoldersList.module.css";
-
 import { Folder } from "../folder/Folder";
 import { Title } from "../title/Title";
 import { TopBar } from "../top-bar/TopBar";
 import { AddNewButton } from "../add-new-button/AddNewButton";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 
 const Folders = ({ children }) => (
     <div className={styles["folders-column"]}>{children}</div>
@@ -16,7 +15,7 @@ const UserCreatedFolders = ({ children }) => (
 );
 
 const FoldersList = () => {
-    const folders = [];
+    const folders = useLoaderData();
 
     return (
         <Folders>
