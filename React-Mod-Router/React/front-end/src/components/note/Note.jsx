@@ -6,6 +6,7 @@ import { useLoaderData, Form, useSubmit } from "react-router-dom";
 const NoteEditor = ({ children }) => (
     <div className={styles["note-editor"]}>{children}</div>
 );
+
 export async function updateNote({request, params}){
     const data = await request.formData();
     const title = data.get("title");
