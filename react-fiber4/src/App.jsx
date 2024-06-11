@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
+import React from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useRef, useState, useEffect, useCallback } from 'react';
 import { OrbitControls, Text } from '@react-three/drei';
 import { Card } from './Card';
+import Spline from '@splinetool/react-spline';
+import ErrorBoundary from './ErrorBoundary';
 //import { gsap } from 'gsap';
 //import img from './assets/Card_Black.png';
 import './App.css';
@@ -118,7 +121,14 @@ function App() {
       {/*<OrbitControls />*/}
     </Canvas>
     </div>
-    <div className='baba'></div>
+
+    <div className='baba'>
+      <ErrorBoundary>
+        <div>
+          <Spline scene="https://my.spline.design/untitled2-da1e652c1577f8ec0dd4cdd11ec798c4/" />
+        </div>
+      </ErrorBoundary>
+    </div>
   </>
   );
 }
